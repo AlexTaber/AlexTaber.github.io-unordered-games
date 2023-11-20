@@ -1,0 +1,222 @@
+body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+    color: #19898D;
+    text-decoration: none;
+}
+
+button {
+    color: #ffffff;
+    background-color: #19898D;
+    padding: 14px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    min-width: 140px;
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat", Arial, Helvetica, sans-serif;
+    color: #19898D;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #19898D;
+    outline-offset: -2px;
+}
+
+.header {
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: #ffffff;
+}
+
+.header > h1 {
+    text-align: center;
+    font-size: 32px;
+    transform: translate(0, 75%);
+    max-width: 80%;
+    color: #ffffff;
+}
+
+.background {
+    top: 0;
+    position: fixed;
+    min-height: 90vh;
+    width: 100%;
+    background: url("assets/unorderd-games-logo-no-text.png"), linear-gradient(180deg, #20DEE5, #000000);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.background:after {
+    content: ' ';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.2);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    min-height: 30px;
+    background-color: #19898D;
+    border-bottom: 2px solid #19898D;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+    min-height: 30px;
+    padding: 0 20px;
+}
+
+.nav-link > a {
+    color: #ffffff;
+}
+
+.active-nav-link {
+    background: #ffffff;
+}
+
+.active-nav-link > a {
+    color: #000000;
+}
+
+.content-container {
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+.content {
+    padding: 20px;
+    background: #ffffff;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 2px solid #19898D;
+    overflow: hidden;
+}
+
+.game-content {
+    padding: 10px;
+}
+
+.game-content > h3 {
+    font-size: 32px;
+    text-align: center;
+}
+
+.game-image {
+    width: 100%;
+    object-fit: cover;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 100px;
+    padding: 10px 0;
+    margin: 0;
+}
+
+.input-field > input, .input-field > textarea {
+    padding: 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.footer {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    color: #ffffff70;
+}
+
+.section-header {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.social-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #19898D;
+}
+
+.download {
+    font-weight: bold;
+    float: right;
+}
+
+@media (min-width: 500px) {
+    .background {
+        background-size: initial;
+    }
+
+    .header > h1 {
+        font-size: 48px;
+    }
+
+    .content-container {
+        width: calc(100% - 40px);
+    }
+}
+
+@media (min-width: 768px) {
+    .game {
+        flex-direction: row;
+    }
+
+    .game-content > h3 {
+        text-align: left;
+    }
+
+    .game-image {
+        width: 200px;
+    }
+
+    .header > h1 {
+        font-size: 64px;
+    }
+
+    .contact-container {
+        flex-direction: row;
+    }
+}
