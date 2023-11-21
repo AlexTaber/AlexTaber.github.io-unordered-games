@@ -32,9 +32,10 @@ input:focus, textarea:focus {
 }
 
 .header {
-    min-height: 90vh;
+    min-height: 45vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
     color: #ffffff;
 }
@@ -42,7 +43,7 @@ input:focus, textarea:focus {
 .header > h1 {
     text-align: center;
     font-size: 32px;
-    transform: translate(0, 75%);
+    /* transform: translate(0, calc(50% - 16px)); */
     max-width: 80%;
     color: #fff;
 }
@@ -50,7 +51,7 @@ input:focus, textarea:focus {
 .background {
     top: 0;
     position: fixed;
-    min-height: 90vh;
+    min-height: 45vh;
     width: 100%;
     background: url("assets/unorderd-games-logo-no-text.png"), linear-gradient(180deg, #20DEE5, #000000);
     background-repeat: no-repeat;
