@@ -23,7 +23,6 @@ button {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat", Arial, Helvetica, sans-serif;
-    color: #19898D;
 }
 
 input:focus, textarea:focus {
@@ -124,7 +123,7 @@ input:focus, textarea:focus {
     padding: 10px;
 }
 
-.game-content > h3 {
+.game-content > * h3 {
     font-size: 32px;
     text-align: center;
 }
@@ -205,7 +204,7 @@ input:focus, textarea:focus {
         flex-direction: row;
     }
 
-    .game-content > h3 {
+    .game-content > * h3 {
         text-align: left;
     }
 

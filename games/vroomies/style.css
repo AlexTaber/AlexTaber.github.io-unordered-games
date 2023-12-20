@@ -1,0 +1,57 @@
+a {
+    color: #734b6d;
+}
+
+.background {
+    background: url("../../assets/vroomies-bg.png"), linear-gradient(180deg, red, #000000);
+    background-size: cover;
+}
+
+.header-nav {
+    width: 100%;
+    top: 0;
+    position: fixed;
+    padding: 5px 20px;
+    box-sizing:content-box;
+    background: #734b6d;
+}
+
+.header-nav > a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+.header-nav > * img {
+    height: 30px;
+}
+
+.nav {
+    background-color: #734b6d;
+    border-bottom: 2px solid #734b6d;
+}
+
+.desktop-trailer {
+    display: none;
+}
+
+.mobile-trailer {
+    display: inherit;
+}
+
+.social-buttons {
+    justify-content: center;
+    font-size: 30px;
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .desktop-trailer {
+        display: inherit;
+    }
+    
+    .mobile-trailer {
+        display: none;
+    }
+}
