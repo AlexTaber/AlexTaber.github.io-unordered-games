@@ -165,8 +165,11 @@ input:focus, textarea:focus {
 .footer {
     padding: 40px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     color: #ffffff70;
+    text-align: center;
 }
 
 .section-header {
