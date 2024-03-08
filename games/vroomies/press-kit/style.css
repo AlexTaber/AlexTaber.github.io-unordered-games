@@ -1,0 +1,35 @@
+.content-container {
+    max-width: 1400px;
+}
+
+.screenshot {
+    height: 300px;
+    width: auto;
+}
+
+.landscape-image {
+    height: 200px;
+    width: auto;
+}
+
+.section-header {
+    font-size: 1rem;
+    text-align: left;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.factsheet {
+    min-width: 360px
+}
+
+@media (min-width: 768px) {
+    .content {
+        display: flex;
+        flex-direction: row;
+    }
+}
